@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cabecerafijo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b11159;
+    color: #121212;
+    padding: 10px 0;
+    z-index: 1000;
+    border-bottom: solid 7px #545050;
+}
+
+.cajaprincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img{
+    height: 110px;
+    width: auto;
+}
+
+.menubotones ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menubotones ul li{
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menubotones ul li:first-child {
+    margin-left: 0;
+}
+
+.menubotones ul li a {
+    color:#ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menubotones ul li a:hover{
+    background-color: #190561;
+}
+
+.game-board {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+}
+
+.box {
+    background: #444;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.box:hover .hover{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: kalam;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.hover{
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #dc2758;
+}
+
+footer{
+    background-color: bisque;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img{
+    height: 150px;
+    width: auto;
+    padding-right: 25px;
+}
+
+footer h2{
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.icons {
+    margin-top: 40px;
+    padding-right: 5px;
+}
+
+.icons i{
+    font-size: 30px;
+    display: inline-block;
+    justify-content: space-around;
+    margin-right: 8px;
+}
